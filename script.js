@@ -1,27 +1,8 @@
 const fse = require('fs-extra');
 const glob = require('glob');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-const rsync = require('rsyncwrapper');
 var WordExtractor = require("word-extractor");
 var extractor = new WordExtractor();
-
-
-rsync({
-		src: "./desktop/docs/docs",
-		dest: "./desktop/docsOutput",
-		recursive: true,
-		exclude: ["*.txt", "*.docx", "*.doc"]
-},function (error,stdout,stderr,cmd) {
-		if ( error ) {
-				// failed
-				console.log(error.message);
-		} else {
-				// success
-		}
-});
-
-
-
 
 
 /////////////////////////////////////////////////////////////////////////// Export CSV
