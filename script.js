@@ -48,11 +48,6 @@ let dataOutput = [];
 const files = glob.sync('./desktop/docs/**/*.doc');
 
 
-
-
-
-
-
 /////////////////////////////////////////////////////////////////////////// function for extraction & modification
 function runExtraction() { // called at bottom
 
@@ -73,11 +68,6 @@ function runExtraction() { // called at bottom
 		  let result = await promise; // wait till the promise
 		  return result
 		}
-
-
-
-
-
 
 	// Data has been extracted and foolowing code will modify
 
